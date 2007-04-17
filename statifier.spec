@@ -1,5 +1,5 @@
-%define version 1.6.8
-%define release %mkrel 3
+%define version 1.6.9
+%define release %mkrel 1
 
 Name:		statifier
 Version:	%{version}
