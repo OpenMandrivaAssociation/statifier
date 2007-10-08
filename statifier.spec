@@ -1,4 +1,4 @@
-%define version 1.6.11
+%define version 1.6.12
 %define release %mkrel 1
 
 Name:		statifier
@@ -7,7 +7,7 @@ Release:	%{release}
 License:	GPL
 Group:		Development/Other
 Summary:	Convert elf dynamic linked exe to "pseudo-static"
-Source:		http://prdownloads.sourceforge.net/statifier/%{name}-%{version}.tar.bz2
+Source:		http://prdownloads.sourceforge.net/statifier/%{name}-%{version}.tar.gz
 Url:		http://%{name}.sourceforge.net	
 ExclusiveArch:	%ix86 alpha x86_64
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
