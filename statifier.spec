@@ -10,6 +10,7 @@ Summary:	Convert elf dynamic linked exe to "pseudo-static"
 Source:		http://prdownloads.sourceforge.net/statifier/%{name}-%{version}.tar.gz
 Url:		http://%{name}.sourceforge.net	
 ExclusiveArch:	%ix86 alpha x86_64
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:  glibc-static-devel
 Requires:	gdb
 
