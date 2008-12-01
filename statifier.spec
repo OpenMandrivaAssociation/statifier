@@ -1,4 +1,4 @@
-%define version 1.6.14
+%define version 1.6.15
 %define release %mkrel 1
 
 Name:		statifier
