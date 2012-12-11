@@ -1,18 +1,19 @@
-%define version 1.7.1
-%define release %mkrel 3
+%define version 1.7.2
+%define release 1
 
 Name:		statifier
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2
 Group:		Development/Other
 Summary:	Convert elf dynamic linked exe to "pseudo-static"
 Source:		http://prdownloads.sourceforge.net/statifier/%{name}-%{version}.tar.gz
 Url:		http://%{name}.sourceforge.net	
 ExclusiveArch:	%ix86 alpha x86_64
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:  glibc-static-devel
-Requires:	gdb
+Requires:      coreutils
+Requires:      gawk
+Requires:      gdb
 
 %description
 Statifier create from dynamically linked ELF executable
@@ -27,15 +28,12 @@ without need to drag all it's libraries.
 make all
 
 %install
-rm -rf $RPM_BUILD_ROOT
+
 %makeinstall_std
 chmod -R u+w %buildroot
 
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog INSTALL LICENSE NEWS README TODO
 %attr(755,root,root)	%{_bindir}/statifier
 %dir %{_prefix}/lib/statifier
