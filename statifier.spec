@@ -3,7 +3,7 @@
 
 Name:		statifier
 Version:	%{version}
-Release:	%{release}
+Release:	1
 License:	GPLv2
 Group:		Development/Other
 Summary:	Convert elf dynamic linked exe to "pseudo-static"
