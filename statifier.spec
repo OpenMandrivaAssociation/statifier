@@ -8,7 +8,7 @@ License:	GPLv2
 Group:		Development/Other
 Summary:	Convert elf dynamic linked exe to "pseudo-static"
 Source:		http://prdownloads.sourceforge.net/statifier/%{name}-%{version}.tar.gz
-Url:		http://%{name}.sourceforge.net	
+Url:		https://%{name}.sourceforge.net	
 ExclusiveArch:	%ix86 alpha x86_64
 BuildRequires:  glibc-static-devel
 Requires:      coreutils
